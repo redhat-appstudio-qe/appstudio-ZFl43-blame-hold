@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-rjtf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-pyxis-tenant/appstudio/dc-metro-map-rjtf@sha256:d082cfa341d1decf8f205fd3aff5b5b19f1b3e314cda60b5658699450d6d358a
+        name: my-nodejs
+        resources: {}
+status: {}
